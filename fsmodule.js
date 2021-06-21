@@ -4,13 +4,13 @@ const fs = require('fs');
 //     console.log(err, data)
 // })
 
-// const a = fs.readFileSync('file.txt')
+const a = fs.readFileSync('file.txt')
 
-// console.log(a.toString())
+console.log(a.toString())
 
-// fs.writeFile('file2.txt', "This is a data", ()=>{
-//     console.log("Written to the file")
-// });
+fs.writeFile('file2.txt', "This is a data", ()=>{
+    console.log("Written to the file")
+});
 
 b = fs.writeFileSync('file2.txt', "This is a data2")
 console.log(b)
